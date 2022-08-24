@@ -1,2 +1,0 @@
-# stackmean
-curso stack Mean
