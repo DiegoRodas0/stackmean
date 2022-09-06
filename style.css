@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*contenido en el centrado general xon año de mil docientos px*/
+
+#general {
+    width: 1200px;
+    margin: 0px auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+/*centro y deseñado de header*/
+
+#headre {
+    width: 60%;
+    height: 100px;
+    background: rgb(8, 47, 92);
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+/*menu diseño*/
+ 
+#menu{
+    background-color: #eeeeee;
+}
+#menu ul li {
+    display: block;
+    float: left;
+    border-right: 1px solid #ccc;
+
+    
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+#menu ul li a {
+    display: block;
+    padding: 15px;
+    color: rgb(9, 40, 82);
+}
+#menu ul li :hover {
+    background: blue;
+    cursor: pointer;
+
+}
+#menu ul li:hover a {
+color: white;
+}
+#contenido {
+    width: 69%;
+    border: 1px solid green;
+    float: left;
+
+}
+#lateral  {
+    float: left;
+    width: 30%;
+    border: 1px solid red; 
+    min-height: 1251px;
+    text-align: center;
+    max-height: 1251px;
+    overflow: scroll;
+
+}
+/*contenido*/
+#contenido h1 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: blue;
+}
+
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: #ccc;
+    border: 5px solid gray;
+    color: white;
+    float: left;
+    margin: 20px;
+    margin-left: 40px;
+
+    /*entrada*/
+    text-align: center;
+    line-height: 250px;
+    color: #444;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 50px;
+
+
+}
+#footer {
+    width: 100%;
+    height: 40%;
+    line-height: 55px;
+    background: #ccc;
+    border-top: 1px solid #ccc;
+    text-align: center;
+
+}
