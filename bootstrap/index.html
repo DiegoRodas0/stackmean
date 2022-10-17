@@ -8,24 +8,43 @@
    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+
+<body onresize="detectartamanio()">
 
     <div class="row" >
 <header class="col-12 bg-primary p-2 pl-5 text-white">
     <h1>curso de stack mean</h1>
+    <h1>ancho <i id="ancho"></i></h1>
+    <h1>alto <i id="alto"></i></h1>
 </header>
 
 <nav id="menu" class="col-12 bg-secondary text-white">
 <ul class="row">
-    <li class="col">inicio</li>
-    <li class="col">pagina 1</li>
-    <li class="col">pagina 2</li>
-    <li class="col">pagina 3</li>
-    <li class="col">contacto</li>
+    <li class="col col-sm-12 col-md">inicio</li>
+    <li class="col col-sm-12 col-md">pagina 1</li>
+    <li class="col col-sm-12 col-md">pagina 2</li>
+    <li class="col col-sm-12 col-md">pagina 3</li>
+    <li class="col col-sm-12 col-md">contacto</li>
     
 </ul>
 
 </nav>
+
+<script>
+
+var titulo = document.getElementById("titulo")
+titulo.innerHTML=$
+    function detectartamanio() {
+        var x = document.getElementById("ancho")
+        x.innerHTML = document.documentElement.scrollWidth + "px"
+      //  x.innerHTML = window.outerWidth + "px"
+        var y = document.getElementById("alto")
+       // y.innerHTML = window.outerHeight + "px"
+        y.innerHTML = document.documentElement.scrollHeight + "px"
+
+    }
+    detectartamanio()
+</script>
 
 <!--cuerpo-->
 <section id="content " class="col-12">
@@ -36,13 +55,13 @@
                      <hr>
 
                     <div class=" items row mt-5 justify-content-around" >
-                        <div class="item col bg-primary m-3">
+                        <div class="item col col-lg col-md-12 col-sm-12 bg-primary ">
                             producto
                         </div>
-                        <div class="item col bg-secondary m-3">
+                        <div class="item col col-lg col-md-6 col-sm-6 bg-secondary ">
                             producto
                         </div>
-                        <div class="item col bg-danger m-3">
+                        <div class="item col col-lg col-md-6 col-sm-6 bg-danger ">
                             producto
                         </div>
                      </div>
@@ -71,7 +90,7 @@
 
                 </section>
 
-                <aside class="col-3 border">
+                <aside class="col-3 border d-none d-none-sm d-md-block">
                         <h2>barra lateral</h2>
                         <div class="lateral row bg-dark">
 
@@ -100,16 +119,6 @@
 
     </div>
    
-
-
-
-
-
-
-
-
-
-
 <!--librerias de js-->
 <script type="text/javascript" src="bootstrap/js/boostrap.bundle.min.js"></script>
 <script type="text/javacript" src="jquery/jquery-3.6.1.min.js"></script>
