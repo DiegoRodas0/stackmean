@@ -8,26 +8,28 @@ var resultado= textoB.toUpperCase()
 resultado= ["guatemala","salvador","xxx"]
 
 
-resultado2= texto.concat(" " + textoB)
+resultado2= textoA.concat(" " + textoB)
 
-var busqueda = textoA.indexOf("una")
+
+var busqueda = textoB.indexOf("administracion")
 var busqueda2 = textoA.lastIndexOf("una")
-var busqueda2 = textoA.search("una")
-var busqueda2 = textoA.match(/una/g)
+var busqueda3 = textoA.search("una")
+var busqueda4= textoA.match(/una/g)
 
-var busqueda2 = textoB = textoB.substr(19,14)
-var busqueda2 = textoB = textoB.charAt(19,)
-var busqueda2 = textoB = textoB.startsWith("org")
-var busqueda2 = textoB = textoB.charAt(19,)
-var busqueda2 = textoB = textoB.startsWith("departamentos")
-var cambiodeTexto = textoB = textoB.includes("administracion", "Guatemala")
-var cambiodeTexto = textoB = textoB.slice(5)
-var cambiodeTexto = textoB = textoB.split(" ")
+var extraertextp = textoB.substr(19,14)
+var extraertextp = textoB.charAt(19)
+var extraertextp = textoB.startsWith("org")
+var extraertextp = textoB.charAt(19)
+var extraertextp = textoB.startsWith("departamentos")
+var cambiodeTexto = textoB.includes("administracion", "Guatemala")
+var cambiodeTexto = textoB.slice(5)
+var cambiodeTexto = textoB.split(" ")
 
 console.log(busqueda)
 console.log(busqueda2)
 console.log(busqueda3)
 console.log(busqueda4)
+console.log(extraertextp)
 console.log(cambiodeTexto)
 
 /*
